@@ -13,7 +13,6 @@ class Mono:
 		self.data = data
 		self.stck = []
 		if (self.type == Variable): self.data = Variable.rand(); return
-		# if (self.type == Matrix): self.data = Matrix.init(m, n)
 
 	def new(name, d=None, t=None): n=Mono(data=d, _type_=t); n.id=name; return n
 	def rand(): return Mono.new(varname(), t=Variable)
